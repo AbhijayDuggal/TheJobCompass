@@ -44,3 +44,13 @@ httpx==0.28.1
 # Evaluation (important for your project)
 ranx==0.3.21
 ir_datasets==0.5.11
+
+pdfplumber
+pymupdf
+Pillow
+tqdm
+orjson
+transformers>=4.45.0
+accelerate
+bitsandbytes
+qwen-vl-utils
