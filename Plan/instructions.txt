@@ -1,0 +1,7 @@
+# Opensearch; solrsearch, apache lucene (based on), elasticsearch.
+# job recommendation system, on how to find new candidates how you will recommend jobs to them
+# what will u do in case of new candidate sign ups? how will you recommend to them
+# similarity search, semantic/text based (hybrid)
+# bm25 search (tf-idf)
+# reranking
+# LLM as a Judge
