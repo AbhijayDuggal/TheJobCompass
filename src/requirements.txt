@@ -1,0 +1,31 @@
+# JobCompass — Python dependencies
+# Install with: pip install -r requirements.txt
+
+# Core ML
+torch>=2.1.0
+transformers>=4.51.0
+sentence-transformers>=3.0.0
+numpy>=1.24.0
+
+# PDF processing
+pdfplumber>=0.10.0
+pymupdf>=1.23.0          # fitz
+Pillow>=10.0.0
+
+# OpenSearch
+opensearch-py>=2.4.0
+
+# Async HTTP
+aiohttp>=3.9.0
+requests>=2.31.0
+
+# Data
+orjson>=3.9.0
+pandas>=2.0.0
+
+# Streamlit
+streamlit>=1.35.0
+
+# Utilities
+tqdm>=4.66.0
+nest_asyncio>=1.6.0

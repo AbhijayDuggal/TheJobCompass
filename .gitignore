@@ -2,3 +2,5 @@ Claude/
 Data/
 TheJobCompass_venv/
 discarded_methods/
+src/__pycache__
+src/README.md
