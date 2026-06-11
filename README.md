@@ -236,30 +236,18 @@ http://localhost:8501
 
 ## Screenshots
 
-### Dashboard
+### Candidate Dashboard
 
-![Dashboard](images/dashboard.png)
+<img width="1877" height="897" alt="Screenshot 2026-06-11 192220" src="https://github.com/user-attachments/assets/5d0897d0-83a5-4c5f-8ae7-e59d670ee6bf" />
 
-### Resume Processing
+### Recruiter Dashboard
 
-![Resume Processing](images/resume_processing.png)
+<img width="1870" height="901" alt="Screenshot 2026-06-11 192830" src="https://github.com/user-attachments/assets/0e3cd486-59cf-43a9-9aa0-172be6c6ec28" />
 
-### Candidate Search
 
-![Candidate Search](images/candidate_search.png)
-
-### Job Recommendations
-
-![Job Recommendations](images/job_recommendations.png)
-
-### Retrieval Pipeline Visualization
-
-![Architecture](images/architecture.png)
 
 ## Author
-
 **Abhijay Duggal**
 
----
 
 
