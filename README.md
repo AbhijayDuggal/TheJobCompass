@@ -1,16 +1,11 @@
 # TheJobCompass
-
 An AI-powered recruitment intelligence platform that automatically extracts, understands, indexes, and matches resumes and job descriptions using Large Language Models, hybrid search, and advanced reranking techniques.
-
----
 
 ## Overview
 
 TheJobCompass is a bidirectional talent discovery and job recommendation system designed to improve recruitment search relevance beyond traditional keyword matching.
 
 The platform processes resumes and job descriptions, converts them into structured profiles, generates semantic embeddings, indexes them into OpenSearch, and performs hybrid retrieval using both sparse and dense search techniques.
-
----
 
 ## System Architecture
 
@@ -62,8 +57,6 @@ BGE Cross-Encoder Reranking
 Final Ranked Results
 ```
 
----
-
 ## Key Features
 
 * Resume parsing and OCR using Qwen2.5-VL
@@ -79,8 +72,6 @@ Final Ranked Results
   * Job → Candidates
 * Streamlit-based interactive interface
 * GPU-aware model loading and memory management
-
----
 
 ## Technology Stack
 
@@ -98,8 +89,6 @@ Final Ranked Results
 | UI                           | Streamlit                    |
 | Inference                    | vLLM                         |
 | Infrastructure               | Docker, CUDA                 |
-
----
 
 ## Project Structure
 
@@ -128,8 +117,6 @@ TheJobCompass/
 └── README.md
 ```
 
----
-
 ## Requirements
 
 * Python 3.10+
@@ -137,8 +124,6 @@ TheJobCompass/
 * Docker
 * OpenSearch
 * vLLM
-
----
 
 ## Installation
 
@@ -174,8 +159,6 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
----
-
 ## OpenSearch Setup
 
 Run OpenSearch using Docker:
@@ -194,8 +177,6 @@ Verify:
 ```bash
 curl http://localhost:9200
 ```
-
----
 
 ## Start vLLM Servers
 
@@ -241,8 +222,6 @@ python -m vllm.entrypoints.openai.api_server \
 --host 0.0.0.0
 ```
 
----
-
 ## Launch Application
 
 ```bash
@@ -255,49 +234,27 @@ Open:
 http://localhost:8501
 ```
 
----
-
 ## Screenshots
 
 ### Dashboard
 
 ![Dashboard](images/dashboard.png)
 
----
-
 ### Resume Processing
 
 ![Resume Processing](images/resume_processing.png)
-
----
 
 ### Candidate Search
 
 ![Candidate Search](images/candidate_search.png)
 
----
-
 ### Job Recommendations
 
 ![Job Recommendations](images/job_recommendations.png)
 
----
-
 ### Retrieval Pipeline Visualization
 
 ![Architecture](images/architecture.png)
-
----
-
-## Future Improvements
-
-* Explainable candidate-job matching
-* Skill gap analysis
-* Interview question generation
-* Multi-language resume support
-* Distributed retrieval infrastructure
-
----
 
 ## Author
 
