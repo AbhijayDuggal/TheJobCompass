@@ -3,7 +3,7 @@ JobCompass — Step 1: Resume Extraction
 Reads PDFs from data/raw/resumes, uses vLLM OCR server (Qwen2.5-VL-3B),
 outputs data/extracted_text/enriched_resumes.jsonl
 
-NOTE: vLLM server must be started externally before calling run().
+NOTE: vLLM server must be started externally before calling run(). Done automatically by app.py though.
 Server command: python -m vllm.entrypoints.openai.api_server \
     --model Qwen/Qwen2.5-VL-3B-Instruct --trust-remote-code \
     --dtype float16 --quantization bitsandbytes --load-format bitsandbytes \
@@ -82,7 +82,6 @@ Rules:
 8. If unreadable, output exactly: [UNREADABLE_PAGE]
 """
 
-
 # ── Extraction functions (exact from NB01) ─────────────────────────────────────
 
 def clean_text(raw: str) -> str:
@@ -93,7 +92,6 @@ def clean_text(raw: str) -> str:
         if len(ln.strip()) > 1 and sum(c.isalnum() for c in ln) >= 2
     ]
     return "\n".join(lines)
-
 
 def structure_pdfplumber_text(raw: str) -> str:
     if not raw:
@@ -116,7 +114,6 @@ def structure_pdfplumber_text(raw: str) -> str:
         else:
             out_lines.append(stripped)
     return "\n".join(out_lines).strip()
-
 
 def extract_digital_pages(pdf_path: str) -> list[dict]:
     results = []
@@ -142,7 +139,6 @@ def extract_digital_pages(pdf_path: str) -> list[dict]:
             "needs_vllm": True, "method": "pending", "error": str(e)
         }]
     return results
-
 
 def render_page_to_base64(pdf_path: str, page_num: int, dpi: int = RENDER_DPI) -> Optional[str]:
     try:
