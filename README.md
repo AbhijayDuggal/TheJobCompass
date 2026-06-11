@@ -1,6 +1,6 @@
 # TheJobCompass
 
-> An AI-powered recruitment intelligence platform that automatically extracts, understands, indexes, and matches resumes and job descriptions using Large Language Models, hybrid search, and advanced reranking techniques.
+An AI-powered recruitment intelligence platform that automatically extracts, understands, indexes, and matches resumes and job descriptions using Large Language Models, hybrid search, and advanced reranking techniques.
 
 ---
 
